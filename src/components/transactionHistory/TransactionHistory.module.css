@@ -1,8 +1,8 @@
 .transactionsTable {
-  width: 100%;
+  /* width: 100%; */
   border-collapse: collapse;
   font-family: Arial, sans-serif;
-  width: 400px;
+  width: 470px;
   margin: 0 auto;
   border: 2px solid black;
   margin-top: 20px;
@@ -20,12 +20,13 @@
 
 .transactionsTableBody td {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   text-align: center;
+  color: rgb(0, 117, 121);
 }
 
 .transactionsTableBody tr:nth-child(odd) {
-  background-color: #f3f3f3;
+  background-color: #242424;;
 }
 
 .transactionsTableBody tr:nth-child(even) {
