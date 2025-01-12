@@ -9,7 +9,7 @@ import {
   profileListItem,
   profileListItemText,
   profileListItemNumber
-} from "./profile/Profile.module.css";
+} from "../profile/Profile.module.css";
 
 const Profile = ({username, tag, location, image, stats}) => {
   return (

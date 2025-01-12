@@ -1,4 +1,4 @@
-// const userData = 
+
 {
   "username": "Jacques Gluke",
   "tag": "jgluke",
@@ -10,36 +10,3 @@
     "likes": 1308
   }
 }
-  
-  
-//   const App = () => {
-//     return (
-//       <>
-//         <Profile
-//           name={userData.username}
-//           tag={userData.tag}
-//           location={userData.location}
-//           image={userData.avatar}
-//           stats={userData.stats}
-//         />
-//       </>
-//     );
-//   };
-  
-
-
-// import userData from "../userData.json";
-
-// const App = () => {
-//   return (
-//     <>
-//       <Profile
-//         name={userData.username}
-//         tag={userData.tag}
-//         location={userData.location}
-//         image={userData.avatar}
-//         stats={userData.stats}
-//       />
-//     </>
-//   );
-// };

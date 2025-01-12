@@ -1,4 +1,4 @@
-// 
+
 [
   {
     "avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png",
@@ -31,32 +31,3 @@
     "id": 1284
   }
 ]
-  // ;
-  
-  // const App = () => {
-  //   return (
-  //     <>
-  //       <FriendList friends={friends} />
-  //     </>
-  //   );
-  // };
-  
-//   import userData from "../userData.json";
-// import friends from "../friends.json";
-
-// const App = () => {
-//   return (
-//     <>
-//       <Profile
-//         name={userData.username}
-//         tag={userData.tag}
-//         location={userData.location}
-//         image={userData.avatar}
-//         stats={userData.stats}
-//       />
-//       <FriendList friends={friends} />
-//     </>
-//   );
-// };
-
-
