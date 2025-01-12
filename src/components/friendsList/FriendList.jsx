@@ -1,6 +1,18 @@
-<ul>
-	{/* Кількість li залежить від кількості об'єктів в масиві */}
-	<li>
-		<FriendListItem />
-	</li>
-</ul>
+import FriendListItem from './friendList/friendListItem/FriendListItem';
+import { friendContainer, friendsList, friendsListItem } from './FriendList.module.css';
+
+function  FriendList({friends}) {
+  return (
+    <div className={friendContainer}>
+      <ul className={friendsList}>
+        {friends.map(friend => (
+          <li className={friendsListItem} key={friend.id}>
+            <FriendListItem friend={friend} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export default FriendList;

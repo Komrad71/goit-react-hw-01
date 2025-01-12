@@ -1,27 +1,27 @@
-import Profile from '../src/components/Profile/Profile';
-import userData from './components/Profile/userData.json';
+import Profile from './components/profile/Profile';
+import userData from './components/profile/userData.json';
 
-import FriendList from './components/friend/FriendList';
-import friends from './components/friend/friends.json';
+import FriendList from './components/friendList/FriendList';
+import friends from './components/friendList/friends.json';
 
-import TransactionHistory from './components/TransactionHistory/TransactionHistory';
-import transactions from './components/TransactionHistory/transactions.json';
+import TransactionHistory from './components/transactionHistory/TransactionHistory';
+import transactions from './components/transactionHistory/transactions.json';
 
 
-function App() {
-    return (
+const App = () => {
+  return (
       <>
-        <Profile
-          username={userData.username}
-          tag={userData.tag}
-          location={userData.location}
-          image={userData.avatar}
-          stats={userData.stats}
-        />
-        <FriendList friends={friends}/>
-        <TransactionHistory items={transactions} />
+          <Profile
+              userName={userData.username}
+              tag={userData.tag}
+              location={userData.location}
+              image={userData.avatar}
+              stats={userData.stats}
+          />
+          <FriendList friends={friends} />
+          <TransactionHistory items={transactions} />
       </>
-    );
-  }
+  );
+};
 
 export default App;

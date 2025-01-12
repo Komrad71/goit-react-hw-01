@@ -1,26 +1,43 @@
-<div>
-  <div>
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-      alt="User avatar"
-    />
-    <p>Petra Marica</p>
-    <p>@pmarica</p>
-    <p>Salvador, Brasil</p>
-  </div>
+import {
+  profileContainer,
+  profileWrapper,
+  profileImage,
+  profileUsername,
+  profileTag,
+  profileLocation,
+  profileList,
+  profileListItem,
+  profileListItemText,
+  profileListItemNumber
+} from "./profile/Profile.module.css";
 
-  <ul>
-    <li>
-      <span>Followers</span>
-      <span>1000</span>
-    </li>
-    <li>
-      <span>Views</span>
-      <span>2000</span>
-    </li>
-    <li>
-      <span>Likes</span>
-      <span>3000</span>
-    </li>
-  </ul>
-</div>
+const Profile = ({username, tag, location, image, stats}) => {
+  return (
+  <div className={profileContainer}>
+      <div className={profileWrapper}>
+      <img
+      src = {image}
+      alt="User avatar" className= {profileImage} width="150"
+      />
+      <p className={profileUsername}>{username}</p>
+      <p className={profileTag}>@{tag}</p>
+      <p className={profileLocation}>{location}</p>
+      </div>
+      <ul className={profileList}>
+      <li className={profileListItem}>
+      <span className={profileListItemText}>Followers</span>
+      <span className={profileListItemNumber}>{stats.followers}</span>
+      </li>
+      <li className={profileListItem}>
+      <span className={profileListItemText}>Views</span>
+      <span className={profileListItemNumber}>{stats.views}</span>
+      </li>
+      <li className={profileListItem}>
+      <span className={profileListItemText}>Likes</span>
+      <span className={profileListItemNumber}>{stats.likes}</span>
+      </li>
+      </ul>
+      </div>)
+}
+
+export default Profile;
